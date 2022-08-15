@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   FilmPoster,
   CardWrap,
@@ -51,3 +53,7 @@ export default function InfoCard({ movieInfo }) {
     </CardWrap>
   );
 }
+
+InfoCard.propTypes = {
+  movieInfo: PropTypes.shape({}).isRequired,
+};

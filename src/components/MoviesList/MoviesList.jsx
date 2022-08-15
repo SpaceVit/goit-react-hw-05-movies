@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Container,
@@ -28,3 +29,7 @@ export default function MoviesList({ movies }) {
     </Container>
   );
 }
+
+MoviesList.propTypes = {
+  movies: PropTypes.shape({}).isRequired,
+};
