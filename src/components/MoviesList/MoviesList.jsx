@@ -31,5 +31,5 @@ export default function MoviesList({ movies }) {
 }
 
 MoviesList.propTypes = {
-  movies: PropTypes.shape({}).isRequired,
+  movies: PropTypes.array.isRequired,
 };

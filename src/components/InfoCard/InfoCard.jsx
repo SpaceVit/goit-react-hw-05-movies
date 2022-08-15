@@ -55,5 +55,5 @@ export default function InfoCard({ movieInfo }) {
 }
 
 InfoCard.propTypes = {
-  movieInfo: PropTypes.shape({}).isRequired,
+  movieInfo: PropTypes.object.isRequired,
 };
